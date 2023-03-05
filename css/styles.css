@@ -327,21 +327,21 @@ body {
 }
 
 .antenna::before {
-  background-image: url(../images/icons.svg/antenna.svg);
+  background-image: url(../images/icons.svg/antenna.png);
   background-size: 59.72px;
 }
 .clock::before {
-  background-image: url(../images/icons.svg/clock.svg);
+  background-image: url(../images/icons.svg/clock.png);
   background-size: 61.22px;
 }
 
 .diagram::before {
-  background-image: url(../images/icons.svg/diagram.svg);
+  background-image: url(../images/icons.svg/diagram.png);
   background-size: 64px;
 }
 
 .astronaut::before {
-  background-image: url(../images/icons.svg/asttronaut.svg);
+  background-image: url(../images/icons.svg/astronaut.png);
   background-size: 50.13px;
 }
 
@@ -796,7 +796,6 @@ body {
   background-color: var(--accent);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
- 
 }
 
 .modal .modal-btn:hover,
@@ -812,8 +811,10 @@ body {
 }
 
 /*---------------------------------------modal field------------------------------*/
-.form-field{display: block;
-  margin-bottom: 8px;}
+.form-field {
+  display: block;
+  margin-bottom: 8px;
+}
 
 .modal-text {
   margin-bottom: 16px;
@@ -837,8 +838,7 @@ body {
   letter-spacing: 0.01em;
 }
 
-
- .form-input {
+.form-input {
   padding-left: 35px;
   width: 100%;
   height: 40px;
@@ -847,13 +847,14 @@ body {
   background-color: transparent;
   outline: transparent;
   transition: border-color var(--taming-duration) var(--taming-cubic);
-
 }
- .form-input:focus{
-  border-color:  var(--hover-focus);
+.form-input:focus {
+  border-color: var(--hover-focus);
 }
 
-.form-input:focus + .icon-person{fill: var(--btn);}
+.form-input:focus + .icon-person {
+  fill: var(--btn);
+}
 
 .input-wrap {
   display: block;
@@ -876,7 +877,9 @@ body {
   transition: border-color var(--taming-duration) var(--taming-cubic);
 }
 
-.form-input:focus + .icon-contact{fill: var(--btn);}
+.form-input:focus + .icon-contact {
+  fill: var(--btn);
+}
 
 textarea {
   resize: none;
@@ -916,7 +919,6 @@ textarea::placeholder {
   border-radius: 4px;
 }
 
-
 .area-field {
   display: flex;
   flex-direction: column;
@@ -934,27 +936,26 @@ textarea::placeholder {
   color: var(--subtle-text);
 }
 
-.label-check{
+.label-check {
   display: flex;
   width: 338px;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.33;
-letter-spacing: 0.04em;
-color: rgba(117, 117, 117, 1);
-
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 1);
 }
 
-.label-check::before{
+.label-check::before {
   content: "";
   width: 16px;
   height: 16px;
-  border: 1.25px solid  var(--dark);
-border-radius: 2px;
-margin-right: 8px;
+  border: 1.25px solid var(--dark);
+  border-radius: 2px;
+  margin-right: 8px;
 }
 
-.check-input:checked + .label-check::before{
+.check-input:checked + .label-check::before {
   background-color: var(--pressed-state);
   border: none;
   background-image: url(../images/icons.svg/check-box.svg);
@@ -962,15 +963,16 @@ margin-right: 8px;
   background-position: center;
 }
 
-.check-input:focus + .label-check::before{
+.check-input:focus + .label-check::before {
   background-color: var(--pressed-state);
 }
 
+.policy-link {
+  color: var(--btn);
+  margin-left: 2px;
+}
 
-.policy-link{color: var(--btn);
-margin-left: 2px;}
-
-.btn-mode-header{
+.btn-mode-header {
   margin-left: 90px;
   cursor: pointer;
   width: 169px;
@@ -978,20 +980,20 @@ margin-left: 2px;}
   margin-top: 24px;
   color: var(--modal);
   background: var(--btn);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.33;
-letter-spacing: 0.04em;
-transition: background-color var(--taming-duration) var(--taming-cubic);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  transition: background-color var(--taming-duration) var(--taming-cubic);
 }
 
 .btn-mode-header:hover,
-.btn-mode-header:focus{
+.btn-mode-header:focus {
   background-color: var(--pressed-state);
 }
 
@@ -1033,7 +1035,9 @@ transition: background-color var(--taming-duration) var(--taming-cubic);
   background-color: var(--dark);
 }
 
-.input-mail:focus{border-color: var(--hover-focus);}
+.input-mail:focus {
+  border-color: var(--hover-focus);
+}
 
 .btn-mode {
   margin: 0;
