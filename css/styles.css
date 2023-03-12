@@ -68,16 +68,9 @@ body {
 
 /*header index.html----Logo*/
 .header {
-  margin-left: auto;
-  margin-right: auto;
   border-bottom: 1px solid var(--accent);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.main-nav {
-  align-items: center;
-  display: flex;
 }
 
 .web-logo {
@@ -89,7 +82,7 @@ body {
 }
 
 .logo-studio {
-  margin-right: 76px;
+  /* margin-right: 76px; */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -98,11 +91,15 @@ body {
 }
 
 /*----------------------------------navigation----------*/
+.main-nav {
+  align-items: center;
+  display: none;
+}
 
 .site-nav {
   display: flex;
 }
-
+/*
 .link-header {
   font-weight: 500;
   font-size: 16px;
@@ -144,10 +141,10 @@ body {
 .link-header:hover,
 .link-header:focus {
   color: var(--hover-focus);
-}
+} */
 
 /*------------------------------------contact------------*/
-.site-contact {
+/* .site-contact {
   display: block;
   font-size: 16px;
   line-height: 1.33;
@@ -161,9 +158,9 @@ body {
 .site-contact:hover,
 .site-contact:focus {
   color: var(--hover-focus);
-}
+} */
 
-.tele-mail {
+/* .tele-mail {
   font-style: normal;
   display: flex;
 }
@@ -172,7 +169,7 @@ body {
 }
 .tele-mail {
   margin-left: auto;
-}
+} */
 
 /*----------------------------hero index.html------------------------*/
 
@@ -202,18 +199,6 @@ body {
   background-color: var(--pressed-state);
   border: var(--btn);
   border-radius: 4px;
-}
-
-.overlay {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/people-office.jpg");
 }
 
 /*-----------------------we-are-------------------*/

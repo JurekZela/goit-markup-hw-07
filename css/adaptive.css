@@ -2,6 +2,17 @@
 
 /* -----------------------------------------media----------------------- */
 @media screen and (max-width: 480px) {
+  .burger-btn {
+    border: none;
+    background-color: #fff;
+    display: block;
+    margin-left: auto;
+  }
+  .burger-svg {
+    width: 30px;
+    height: 20px;
+    border: 3px solid #2e2f42;
+  }
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -22,6 +33,30 @@
   .overlay {
     max-width: 100%;
     max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile-photo.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/mobile-photo.jpg);
+    }
   }
 
   .feature {
@@ -45,12 +80,6 @@
     align-items: center;
   }
 
-  .block-icon {
-    display: flex;
-    flex-wrap: wrap;
-    width: 426px;
-  }
-
   .icons:nth-child(-n + 4) {
     margin-bottom: 72px;
   }
@@ -59,13 +88,17 @@
     margin-right: 16px;
   }
 
+  .block-icon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 436px;
+  }
+
   .customers {
     display: flex;
     justify-content: center;
   }
   .container-index {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 456px;
   }
 
@@ -120,6 +153,11 @@
 }
 /* -----------------------------------------media max 768--------------- */
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .main-nav {
+    align-items: center;
+    display: flex;
+  }
+
   .tele-mail {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -148,26 +186,42 @@
     line-height: 1.33;
     letter-spacing: 0.02em;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 50px;
   }
 
   .overlay {
     max-width: 100%;
     max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/tablet-photo.jpg");
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-photo.jpg);
+    }
+  }
+
   .feature {
     display: flex;
     justify-content: center;
   }
-  /* 
-  .feature:nth-child(-n + 2) {
-    row-gap: 72px;
-  } */
-
-  /* .title-info:nth-child(-n + 2) {
-    margin-bottom: 72px;
-  }*/
-
   .characteristic {
     display: flex;
     justify-content: center;
@@ -190,7 +244,7 @@
   }
 
   .team-name {
-    width: 552px;
+    max-width: 552px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -208,11 +262,15 @@
   }
 
   .team-name {
-    max-width: 552px;
+    width: 552px;
   }
 
   .block-icon {
     width: 720px;
+  }
+  .customers {
+    display: flex;
+    justify-content: center;
   }
 
   .team-info:nth-child(3) {
@@ -231,11 +289,6 @@
 
   .icons {
     margin-right: 24px;
-  }
-
-  .customers {
-    display: flex;
-    justify-content: center;
   }
 
   .icons:not(:nth-child(3)),
@@ -264,7 +317,7 @@
   }
 
   .block-footer {
-    width: 526px;
+    width: 540px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -280,13 +333,22 @@
 }
 /* -------------------------media min 768------------ */
 @media screen and (min-width: 768px) {
-  .mail {
+  .logo-studio {
+    margin-right: 76px;
+  }
+
+  .main-nav {
+    align-items: center;
+    display: flex;
+  }
+
+  /* .mail {
     margin-right: 40px;
   }
 
   .site-nav .item:not(:last-child) {
     margin-right: 40px;
-  }
+  } */
 
   .container-index {
     margin-left: auto;
@@ -319,7 +381,30 @@
     max-height: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office.jpg);
+    }
+  }
+
   /*  */
 
   .team {
@@ -434,6 +519,9 @@
 
   .input-mail {
     margin-right: 24px;
+  }
+  .input-footer {
+    width: 484px;
   }
 }
 /* ------------------------------media------------------------------------------- */
