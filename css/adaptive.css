@@ -2,17 +2,6 @@
 
 /* -----------------------------------------media----------------------- */
 @media screen and (max-width: 480px) {
-  .burger-btn {
-    border: none;
-    background-color: #fff;
-    display: block;
-    margin-left: auto;
-  }
-  .burger-svg {
-    width: 30px;
-    height: 20px;
-    border: 3px solid #2e2f42;
-  }
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -153,6 +142,9 @@
 }
 /* -----------------------------------------media max 768--------------- */
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
   .main-nav {
     align-items: center;
     display: flex;
@@ -333,6 +325,9 @@
 }
 /* -------------------------media min 768------------ */
 @media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
   .logo-studio {
     margin-right: 76px;
   }
@@ -342,13 +337,13 @@
     display: flex;
   }
 
-  /* .mail {
+  .mail {
     margin-right: 40px;
   }
 
   .site-nav .item:not(:last-child) {
     margin-right: 40px;
-  } */
+  }
 
   .container-index {
     margin-left: auto;

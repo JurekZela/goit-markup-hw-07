@@ -201,6 +201,44 @@ body {
   border-radius: 4px;
 }
 
+.mobile-block {
+  margin-right: 18px;
+  overflow-y: scroll;
+  padding-left: 40px;
+  transition: transform var(--taming-duration) var(--taming-cubic);
+  transform: translate(-50%, -50%) scale(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  background-color: var(--modal);
+}
+
+.burger-btn {
+  border: none;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.burger-svg {
+  width: 30px;
+  height: 19px;
+}
+
+.btn-mode-mobile {
+  display: block;
+  margin-left: auto;
+}
+
+.icon-list-mobile {
+  display: flex;
+}
+
+.icon-distance-mobile {
+  width: 40px;
+  height: 40px;
+}
 /*-----------------------we-are-------------------*/
 .team {
   padding-bottom: 120px;
@@ -306,11 +344,6 @@ body {
   color: var(--dark);
 }
 
-.icon-distance {
-  width: 40px;
-  height: 40px;
-}
-
 .icon-list {
   display: flex;
   justify-content: center;
@@ -318,6 +351,11 @@ body {
 
 .icon-distance:not(:last-child) {
   margin-right: 24px;
+}
+
+.icon-distance {
+  width: 40px;
+  height: 40px;
 }
 
 .title-professional {
