@@ -1,7 +1,19 @@
 /* ============================================================================MEDIA============================================= */
 
 /* -----------------------------------------media----------------------- */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .block-mobil {
+    display: none;
+  }
+  .site-nav,
+  .tele-mail {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    align-content: center;
+  }
+
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -88,13 +100,15 @@
     justify-content: center;
   }
   .container-index {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 456px;
   }
 
   /* footer 480*/
   .footer {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
     padding-top: 97.5px;
     padding-bottom: 96px;
     background-color: var(--primary-footer);
@@ -141,20 +155,94 @@
   }
 }
 /* -----------------------------------------media max 768--------------- */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .burger-btn {
     display: none;
   }
+  .logo-studio {
+    padding-top: 25px;
+    margin-right: 120px;
+  }
   .main-nav {
-    align-items: center;
     display: flex;
   }
+
+  /* .block-mobil {
+    display: flex;
+  } */
+
+  .link-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    position: relative;
+    color: var(--dark);
+
+    display: block;
+    padding: 24px 0;
+
+    transition: color var(--taming-duration) var(--taming-cubic);
+  }
+
+  .link-header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--pressed-state);
+    transform: scaleX(0);
+    transition: transform var(--taming-duration) linear;
+  }
+
+  .link-header:hover::after,
+  .link-header:focus::after,
+  .link-header.current::after {
+    transform: scaleX(1);
+  }
+
+  .link-header.current {
+    color: var(--pressed-state);
+  }
+
+  .link-header:hover,
+  .link-header:focus {
+    color: var(--hover-focus);
+  }
+
+  /*------------------------------------contact------------*/
+  .site-contact {
+    display: block;
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+
+    color: var(--text);
+
+    transition: color var(--taming-duration) var(--taming-cubic);
+  }
+
+  .site-contact:hover,
+  .site-contact:focus {
+    color: var(--hover-focus);
+  }
+  * .tele-mail {
+    font-style: normal;
+    display: flex;
+  }
+  /* .tele-mail {
+    margin-right: 16px;
+  } */
 
   .tele-mail {
     padding-top: 16px;
     padding-bottom: 16px;
     flex-direction: column;
-    margin-left: auto;
+    margin-left: 120px;
   }
 
   .site-nav .item:not(:last-child) {
@@ -299,6 +387,8 @@
 
   /* footer 768*/
   .footer {
+    display: flex;
+    justify-content: center;
     padding-top: 97.5px;
     padding-bottom: 96px;
     background-color: var(--primary-footer);
@@ -323,18 +413,93 @@
     margin-right: 24px;
   }
 }
-/* -------------------------media min 768------------ */
-@media screen and (min-width: 768px) {
+
+/* -------------------------media min 1200------------ */
+@media screen and (min-width: 1200px) {
   .burger-btn {
     display: none;
   }
   .logo-studio {
+    padding-top: 25px;
     margin-right: 76px;
   }
 
   .main-nav {
-    align-items: center;
     display: flex;
+  }
+  /* .block-mobil {
+    display: flex;
+  } */
+  .link-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    position: relative;
+    color: var(--dark);
+
+    display: block;
+    padding: 24px 0;
+
+    transition: color var(--taming-duration) var(--taming-cubic);
+  }
+
+  .link-header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--pressed-state);
+    transform: scaleX(0);
+    transition: transform var(--taming-duration) linear;
+  }
+
+  .link-header:hover::after,
+  .link-header:focus::after,
+  .link-header.current::after {
+    transform: scaleX(1);
+  }
+
+  .link-header.current {
+    color: var(--pressed-state);
+  }
+
+  .link-header:hover,
+  .link-header:focus {
+    color: var(--hover-focus);
+  }
+
+  .tele-mail {
+    font-style: normal;
+    display: flex;
+  }
+  .tele-mail {
+    margin-right: 16px;
+  }
+
+  .tele-mail {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: auto;
+  }
+
+  .site-contact {
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+
+    color: var(--text);
+
+    transition: color var(--taming-duration) var(--taming-cubic);
+  }
+
+  .site-contact:hover,
+  .site-contact:focus {
+    color: var(--hover-focus);
   }
 
   .mail {
@@ -372,7 +537,7 @@
   }
 
   .overlay {
-    max-width: 1200px;
+    min-width: 1200px;
     max-height: 600px;
     margin-left: auto;
     margin-right: auto;
