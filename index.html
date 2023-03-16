@@ -26,118 +26,49 @@
           <a class="logo-studio link" href="./index.html">
             <span class="web-logo link">WEB</span>STUDIO</a
           >
-       <div>
-            <button class="burger-btn" type="button" data-modal-open>
-            <svg class="burger-svg">
+          <button class="burger-btn" type="button">
+            <svg
+              class="burger-svg"
+              width="32"
+              height="22"
+              aria-label="mobile menu switch"
+            >
               <use
-                href="./images/icons.svg/symbol-defs.svg#icon-Vector-mobile"
+                class="icon-cross"
+                href="./images/icons.svg/symbol-defs.svg#icon-vector"
+              ></use>
+
+              <use
+                class="icon-menu"
+                href="./images/icons.svg/symbol-defs.svg#menu"
               ></use>
             </svg>
-          </button> 
-       </div>
-          <div class="menu-phone backdrop is-hidden" data-modal>
-            <!-- <div class="mobile-block">
-            <button
-              class="btn-mode-mobile"
-              type="button"
-              data-modal-close
-            ></button>
-
-            <ul class="list">
-              <li class="menu-mobile">
-                <a class="link-mobile" href="./index.html">Studio</a>
-              </li>
-              <li class="menu-mobile">
-                <a class="link-mobile" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="menu-mobile">
-                <a class="link-mobile" href="#">Contacts</a>
-              </li>
-            </ul>
-            <ul class="list tele-mobile">
-              <li class="contact-mobile">
-                <a class="mail-mobile" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact-mobile">
-                <a class="numer-mobile" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-            <ul class="list icon-list-mobile">
-              <li class="icon-distance-mobile">
-                <a href="" class="btn-icon">
-                  <svg class="media">
-                    <use
-                      href="./images/icons.svg/icons.svg.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icon-distance-mobile">
-                <a href="" class="btn-icon">
-                  <svg class="media">
-                    <use
-                      href="./images/icons.svg/icons.svg.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icon-distance-mobile">
-                <a href="" class="btn-icon">
-                  <svg class="media">
-                    <use
-                      href="./images/icons.svg/icons.svg.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icon-distance-mobile">
-                <a href="" class="btn-icon">
-                  <svg class="media">
-                    <use
-                      href="./images/icons.svg/icons.svg.svg#icon-linkedin"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div> -->
-          </div>
-        
-            <ul class="list site-nav">
-              <li class="item">
-                <a class="link-header current link" href="./index.html"
-                  >Studio</a
-                >
-              </li>
-              <li class="item">
-                <a class="link-header link" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="item">
-                <a class="link-header link" href="#">Contacts</a>
-              </li>
-            </ul>
-            <ul class="list tele-mail">
-              <li class="contact">
-                <a
-                  class="link site-contact mail"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact">
-                <a class="link site-contact" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </div>
+          </button>
+          <ul class="list site-nav">
+            <li class="item">
+              <a class="link-header current link" href="./index.html">Studio</a>
+            </li>
+            <li class="item">
+              <a class="link-header link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item">
+              <a class="link-header link" href="#">Contacts</a>
+            </li>
+          </ul>
+          <ul class="list tele-mail">
+            <li class="contact">
+              <a class="link site-contact mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact">
+              <a class="link site-contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
     <main>
       <section class="hero overlay">
@@ -151,8 +82,8 @@
           </button>
         </div>
       </section>
-      <!-- <div class="backdrop is-hidden container-index" data-modal>
-        <div class="modal">
+      <div class="backdrop is-hidden back-modal" data-modal>
+        <div class="modal container-index">
           <button data-modal-close class="modal-btn" type="button">
             <svg class="vector">
               <use href="./images/icons.svg/symbol-defs.svg#icon-vector"></use>
@@ -226,7 +157,7 @@
             <button class="btn-mode-header" type="submit">Send</button>
           </form>
         </div>
-      </div> -->
+      </div>
       <section class="section feature">
         <div class="container-index">
           <h2 class="visually-hidden">section 2 main</h2>

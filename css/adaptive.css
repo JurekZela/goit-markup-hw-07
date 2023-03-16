@@ -1,14 +1,17 @@
-/* ============================================================================MEDIA============================================= */
+/* ==================================================
+ =====================================================
+ ===================================================== */
 
-/* -----------------------------------------media----------------------- */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .block-mobil {
     display: none;
   }
+
   .site-nav,
   .tele-mail {
     display: none;
   }
+
   .main-nav {
     display: flex;
     align-content: center;
@@ -58,6 +61,11 @@
         ),
         url(../images/mobile-photo.jpg);
     }
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
   }
 
   .feature {
@@ -153,9 +161,18 @@
   .modal {
     max-width: 392px;
   }
+
+  .title-text {
+    max-width: 396px;
+    width: 100%;
+  }
 }
+
+/* ==================================================================
+=====================================================================
+====================================================================== */
 /* -----------------------------------------media max 768--------------- */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .burger-btn {
     display: none;
   }
@@ -163,13 +180,10 @@
     padding-top: 25px;
     margin-right: 120px;
   }
+
   .main-nav {
     display: flex;
   }
-
-  /* .block-mobil {
-    display: flex;
-  } */
 
   .link-header {
     font-weight: 500;
@@ -234,13 +248,9 @@
     font-style: normal;
     display: flex;
   }
-  /* .tele-mail {
-    margin-right: 16px;
-  } */
 
   .tele-mail {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px;
     flex-direction: column;
     margin-left: 120px;
   }

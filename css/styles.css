@@ -28,10 +28,6 @@ p {
   padding: 0;
 }
 
-/* img {
-  display: block;
-} */
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -91,10 +87,6 @@ body {
 }
 
 /*----------------------------------navigation----------*/
-/* .main-nav {
-  align-items: center;
-  display: none;
-} */
 
 .site-nav {
   display: flex;
@@ -142,19 +134,17 @@ body {
   border-radius: 4px;
   background-color: var(--modal);
 }
-
+.back-modal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .burger-btn {
   border: none;
-  display: block;
+  display: inline-block;
   margin-left: auto;
   cursor: pointer;
 }
-
-.burger-svg {
-  width: 30px;
-  height: 19px;
-}
-
 .btn-mode-mobile {
   display: block;
   margin-left: auto;
