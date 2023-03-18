@@ -28,11 +28,6 @@ p {
   padding: 0;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1158px;
-}
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-header);
@@ -92,8 +87,11 @@ body {
   display: flex;
 }
 
-/*----------------------------hero index.html------------------------*/
+.link-header.current {
+  color: var(--pressed-state);
+}
 
+/*----------------------------hero index.html------------------------*/
 .hero-btn {
   display: flex;
   justify-content: center;
@@ -134,17 +132,127 @@ body {
   border-radius: 4px;
   background-color: var(--modal);
 }
-.back-modal {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .burger-btn {
+  margin-top: 24px;
   border: none;
-  display: inline-block;
   margin-left: auto;
   cursor: pointer;
+  background-color: var(--primary-header);
+  padding: 0;
 }
+
+/* .back-modal {
+  display: _block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* .burger-btn .icon-cross {
+  display: none;
+}
+
+.burger-btn.is-open .icon-cross {
+  display: block;
+}
+.burger-btn.is-open .icon-menu {
+  display: none;
+} */
+.icon-menu {
+  stroke: var(--primary-footer);
+}
+
+/* ====================menu mobile=================== */
+.block-mobil {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  max-height: 100%;
+  background-color: var(--primary-header);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.block-mobil > .container-mobile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.container-mobile {
+  margin-left: 40px;
+}
+
+.icon-cross {
+  width: 8px;
+  height: 8px;
+}
+.mobile-close {
+  display: block;
+
+  margin: 24px 24px 32px auto;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid var(--dark);
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.mobile-close:hover,
+.mobile-close:focus {
+  fill: var(--primary-header);
+  background-color: var(--hover-focus);
+  border-color: none;
+}
+
+.menu-mobile:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.link-mobile {
+  margin: 0;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+}
+
+.contact-mob {
+  color: var(--pressed-state);
+}
+
+.telephone-mobile {
+  margin-bottom: 40px;
+}
+
+.numer-mobile {
+  color: var(--btn);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.mail-mobile {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+.contact-mobile {
+  margin-bottom: 48px;
+}
+
 .btn-mode-mobile {
   display: block;
   margin-left: auto;
@@ -152,12 +260,18 @@ body {
 
 .icon-list-mobile {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .icon-distance-mobile {
   width: 40px;
   height: 40px;
 }
+
+.icon-distance-mobile:not(:last-child) {
+  margin-right: 56px;
+}
+
 /*-----------------------we-are-------------------*/
 .team {
   padding-bottom: 120px;
@@ -311,8 +425,8 @@ body {
 
 .media {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 60%;
+  height: 60%;
 }
 
 /*customers--------------------------*/

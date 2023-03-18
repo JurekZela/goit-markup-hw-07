@@ -18,57 +18,140 @@
     <link href="./css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./modal.js" />
     <link rel="stylesheet" href="./css/adaptive.css" />
+    <link rel="stylesheet" href="./css/mobile-menu.js">
   </head>
   <body>
-    <header class="section header">
+    <header class="section header" >
       <div class="container-index">
-        <nav class="main-nav">
+        <nav class="main-nav ">
           <a class="logo-studio link" href="./index.html">
             <span class="web-logo link">WEB</span>STUDIO</a
           >
-          <button class="burger-btn" type="button">
-            <svg
-              class="burger-svg"
-              width="32"
-              height="22"
-              aria-label="mobile menu switch"
-            >
-              <use
-                class="icon-cross"
+
+          <!-- =====================mobile btn -->
+            <button class="burger-btn " type="button" >
+            <svg class="burger-svg"
+            width="32"
+            height="22"
+            aria-label="mobile menu switch"
+            aria-expanded="false">
+              <use class="icon-menu"   href="./images/icons.svg/symbol-defs.svg#icon-hamburger"></use>
+            </svg>
+          </button> 
+
+<!-- ======================Mobile menu================================ -->
+ <div class="block-mobil">
+ <div class="container-mobile">
+   
+ <div>
+  <button class="mobile-close">
+   <svg class="icon-cross" >
+     <use 
                 href="./images/icons.svg/symbol-defs.svg#icon-vector"
               ></use>
+   </svg>
+  </button>
+   <ul class="list">
+              <li class="menu-mobile">
+                <a class="link-mobile" href="./index.html">Studio</a>
+              </li>
+              <li class="menu-mobile">
+                <a class="link-mobile" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="menu-mobile">
+                <a class="link-mobile  contact-mob" href="#">Contacts</a>
+              </li>
+            </ul>
+ </div>
+          <div>
+              <ul class="list tele-mobile">
+              <li class="telephone-mobile">
+                <a class="numer-mobile" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+               <li class="contact-mobile">
+                <a class="mail-mobile" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list icon-list-mobile">
+              <li class="icon-distance-mobile ">
+                <a href="" class="btn-icon">
+                  <svg class="media">
+                    <use
+                      href="./images/icons.svg/icons.svg.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-distance-mobile">
+                <a href="" class="btn-icon">
+                  <svg class="media">
+                    <use
+                      href="./images/icons.svg/icons.svg.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-distance-mobile">
+                <a href="" class="btn-icon">
+                  <svg class="media">
+                    <use
+                      href="./images/icons.svg/icons.svg.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-distance-mobile">
+                <a href="" class="btn-icon">
+                  <svg class="media">
+                    <use
+                      href="./images/icons.svg/icons.svg.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-              <use
-                class="icon-menu"
-                href="./images/icons.svg/symbol-defs.svg#menu"
-              ></use>
-            </svg>
-          </button>
-          <ul class="list site-nav">
-            <li class="item">
-              <a class="link-header current link" href="./index.html">Studio</a>
-            </li>
-            <li class="item">
-              <a class="link-header link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="item">
-              <a class="link-header link" href="#">Contacts</a>
-            </li>
-          </ul>
-          <ul class="list tele-mail">
-            <li class="contact">
-              <a class="link site-contact mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact">
-              <a class="link site-contact" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
+ </div>
+
+ </div> 
+
+<!-- =========================================================== -->
+            <ul class="list site-nav">
+              <li class="item">
+                <a class="link-header current link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="item">
+                <a class="link-header link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="item">
+                <a class="link-header link " href="#">Contacts</a>
+              </li>
+            </ul>
+            <ul class="list tele-mail">
+              <li class="contact">
+                <a
+                  class="link site-contact mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact">
+                <a class="link site-contact" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-      </div>
     </header>
     <main>
       <section class="hero overlay">
@@ -82,18 +165,16 @@
           </button>
         </div>
       </section>
-      <div class="backdrop is-hidden back-modal" data-modal>
+       <div class="backdrop is-hidden " data-modal>
         <div class="modal container-index">
           <button data-modal-close class="modal-btn" type="button">
             <svg class="vector">
               <use href="./images/icons.svg/symbol-defs.svg#icon-vector"></use>
             </svg>
           </button>
-
           <p class="modal-text">
             Leave your contacts and we will call you back
           </p>
-
           <form class="form">
             <label class="form-field">
               <span class="form-label">Name</span>
@@ -104,7 +185,6 @@
                 </svg>
               </span>
             </label>
-
             <label class="form-field">
               <span class="form-label">Phone</span>
               <span class="input-wrap">
@@ -114,7 +194,6 @@
                 </svg>
               </span>
             </label>
-
             <label class="form-field">
               <span class="form-label">Email</span>
               <span class="input-wrap">
@@ -124,7 +203,6 @@
                 </svg>
               </span>
             </label>
-
             <label class="area-field">
               <span class="area-text">Comment</span>
               <textarea
@@ -133,7 +211,6 @@
                 placeholder="Text input"
               ></textarea>
             </label>
-
             <div class="form-field">
               <input
                 class="check-input"
@@ -153,15 +230,14 @@
                 >
               </label>
             </div>
-
             <button class="btn-mode-header" type="submit">Send</button>
           </form>
         </div>
       </div>
-      <section class="section feature">
-        <div class="container-index">
+      <section class="section">
+        <div class="container-index  feature">
           <h2 class="visually-hidden">section 2 main</h2>
-          <ul class="list characteristic">
+          <ul class="list  characteristic">
             <li class="title-info antenna">
               <h3 class="title">Strategy</h3>
               <p class="title-text">
@@ -230,7 +306,7 @@
       <section class="section main-style">
         <div class="container-index">
           <h2 class="main-team">Our Team</h2>
-          <ul class="list team-name">
+           <ul class="list team-name">
             <li class="team-info">
               <img
                 srcset="./images/photo4.jpg.jpg 1x, ./images/photo4-2x.jpg 2x"
@@ -239,7 +315,7 @@
                 width="264"
                 height="260"
               />
-              <div class="card-block">
+      <div class="card-block">
                 <h3 class="card-title">Mark Guerrero</h3>
                 <p class="title-professional">Product Designer</p>
                 <ul class="list icon-list">
@@ -564,5 +640,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./css/mobile-menu.js"></script>
   </body>
 </html>

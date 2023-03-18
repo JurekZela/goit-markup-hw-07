@@ -1,10 +1,34 @@
+:root {
+  --primary-header: #ffffff;
+  --primary-footer: #2e2f42;
+  --hover-focus: #4d5ae5;
+  --btn: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --modal: #fcfcfc;
+  --taming-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --taming-duration: 250ms;
+}
+
 /* ==================================================
  =====================================================
  ===================================================== */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .logo-studio {
+    margin-top: 24px;
+  }
+  .header {
+    position: relative;
+    height: 70px;
+  }
   .block-mobil {
-    display: none;
+    position: absolute;
   }
 
   .site-nav,
@@ -63,16 +87,21 @@
     }
   }
 
+  .feature {
+    display: flex;
+    justify-content: center;
+  }
+
   .title {
     display: flex;
     justify-content: center;
   }
 
-  .feature {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .title-text {
+    display: block;
+    margin-left: auto;
   }
+
   .title-info:not(:last-child),
   .team-info:not(:last-child) {
     margin-bottom: 72px;
@@ -83,10 +112,9 @@
     opacity: 0;
   }
 
-  .main-style {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .team-info {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .icons:nth-child(-n + 4) {
@@ -108,9 +136,13 @@
     justify-content: center;
   }
   .container-index {
+    width: 100%;
+  }
+
+  .block-icon,
+  .icons {
     margin-left: auto;
     margin-right: auto;
-    max-width: 456px;
   }
 
   /* footer 480*/
@@ -173,6 +205,9 @@
 ====================================================================== */
 /* -----------------------------------------media max 768--------------- */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .block-mobil {
+    display: none;
+  }
   .burger-btn {
     display: none;
   }
@@ -426,6 +461,9 @@
 
 /* -------------------------media min 1200------------ */
 @media screen and (min-width: 1200px) {
+  .block-mobil {
+    display: none;
+  }
   .burger-btn {
     display: none;
   }
@@ -472,10 +510,6 @@
   .link-header:focus::after,
   .link-header.current::after {
     transform: scaleX(1);
-  }
-
-  .link-header.current {
-    color: var(--pressed-state);
   }
 
   .link-header:hover,
