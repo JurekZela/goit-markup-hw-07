@@ -36,6 +36,11 @@ body {
   background-color: var(--primary-header);
   color: var(--primary-footer);
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
 .visually-hidden {
   padding: 0;
   margin: 0;
@@ -459,8 +464,8 @@ body {
 }
 
 .logo-icon {
-  width: 104px;
-  height: 56px;
+  max-width: 104px;
+  max-height: 56px;
   fill: currentColor;
 }
 .block-icon {
@@ -858,7 +863,9 @@ textarea::placeholder {
 }
 
 .btn-mode-header {
-  margin-left: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   width: 169px;
   height: 56px;
@@ -999,7 +1006,6 @@ textarea::placeholder {
 }
 
 .btn-mode {
-  margin: 0;
   padding: 8px 24px;
   font-family: inherit;
   font-weight: 500;

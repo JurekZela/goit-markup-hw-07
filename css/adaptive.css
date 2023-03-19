@@ -19,16 +19,24 @@
  =====================================================
  ===================================================== */
 
-@media screen and (max-width: 768px) {
-  .logo-studio {
-    margin-top: 24px;
+@media screen and (max-width: 379px) {
+  .icons:nth-child(5) {
+    margin-bottom: 72px;
   }
+}
+
+@media screen and (max-width: 768px) {
   .block-mobil.backdrop {
     background-color: var(--primary-header);
   }
 
+  .backdrop {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
   .header {
-    height: 70px;
+    padding: 24px 16px 24px 16px;
   }
 
   .site-nav,
@@ -116,14 +124,14 @@
     margin-bottom: 72px;
   }
 
-  .icons:nth-child(2n + 1) {
+  /* .icons:nth-child(2n + 1) {
     margin-right: 16px;
-  }
+  } */
 
   .block-icon {
     display: flex;
     flex-wrap: wrap;
-    width: 436px;
+    max-width: 436px;
   }
 
   .customers {
