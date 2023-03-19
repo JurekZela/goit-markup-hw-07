@@ -23,12 +23,12 @@
   .logo-studio {
     margin-top: 24px;
   }
-  .header {
-    position: relative;
-    height: 70px;
+  .block-mobil.backdrop {
+    background-color: var(--primary-header);
   }
-  .block-mobil {
-    position: absolute;
+
+  .header {
+    height: 70px;
   }
 
   .site-nav,
@@ -95,11 +95,6 @@
   .title {
     display: flex;
     justify-content: center;
-  }
-
-  .title-text {
-    display: block;
-    margin-left: auto;
   }
 
   .title-info:not(:last-child),

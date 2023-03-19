@@ -18,7 +18,7 @@
     <link href="./css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="./modal.js" />
     <link rel="stylesheet" href="./css/adaptive.css" />
-    <link rel="stylesheet" href="./css/mobile-menu.js">
+    <link rel="stylesheet" href="./js/menu.js">
   </head>
   <body>
     <header class="section header" >
@@ -29,22 +29,21 @@
           >
 
           <!-- =====================mobile btn -->
-            <button class="burger-btn " type="button" >
+            <button class="burger-btn" data-menu-open type="button" >
             <svg class="burger-svg"
             width="32"
             height="22"
-            aria-label="mobile menu switch"
-            aria-expanded="false">
+            aria-label="mobile menu switch">
               <use class="icon-menu"   href="./images/icons.svg/symbol-defs.svg#icon-hamburger"></use>
             </svg>
           </button> 
 
 <!-- ======================Mobile menu================================ -->
- <div class="block-mobil">
- <div class="container-mobile">
+ <div class="block-mobil  is-hidden  backdrop" data-menu>
+ <div class=" container-mobile">
    
  <div>
-  <button class="mobile-close">
+  <button class="mobile-close" data-menu-close>
    <svg class="icon-cross" >
      <use 
                 href="./images/icons.svg/symbol-defs.svg#icon-vector"
@@ -235,7 +234,7 @@
         </div>
       </div>
       <section class="section">
-        <div class="container-index  feature">
+        <div class="  feature">
           <h2 class="visually-hidden">section 2 main</h2>
           <ul class="list  characteristic">
             <li class="title-info antenna">
@@ -640,6 +639,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./css/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
