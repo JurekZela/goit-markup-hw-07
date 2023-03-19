@@ -239,6 +239,9 @@ img {
 }
 
 .numer-mobile {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 353px;
   color: var(--btn);
   text-decoration: none;
   font-weight: 700;
