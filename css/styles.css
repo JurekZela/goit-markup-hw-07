@@ -38,7 +38,8 @@ body {
 }
 
 img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 .visually-hidden {
@@ -63,6 +64,18 @@ img {
 }
 .link {
   text-decoration: none;
+}
+
+.container-index {
+  max-width: 428px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-team {
+  max-width: 428px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /*header index.html----Logo*/
@@ -127,42 +140,12 @@ img {
   border: var(--btn);
   border-radius: 4px;
 }
-
-/* .mobile-block {
-  margin-right: 18px;
-  overflow-y: scroll;
-  padding-left: 40px;
-  transition: transform var(--taming-duration) var(--taming-cubic);
-  transform: translate(-50%, -50%) scale(1);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  background-color: var(--modal);
-} */
-
-/* .back-modal {
-  display: _block;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-/* .burger-btn .icon-cross {
-  display: none;
-}
-
-.burger-btn.is-open .icon-cross {
-  display: block;
-}
-.burger-btn.is-open .icon-menu {
-  display: none;
-} */
 .icon-menu {
   stroke: var(--primary-footer);
 }
 
 .burger-btn {
-  margin-top: 24px 0;
+  margin-top: 24px;
   border: none;
   margin-left: auto;
   cursor: pointer;
@@ -174,8 +157,6 @@ img {
 .block-mobil {
   top: 0;
   position: fixed;
-  width: 100%;
-  height: 100%;
   background-color: var(--primary-header);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -183,14 +164,14 @@ img {
 
 .block-mobil > .container-mobile {
   display: flex;
+  max-width: 385px;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   overflow-y: auto;
-}
+  margin: auto;
 
-.container-mobile {
-  margin-left: 40px;
+  padding: 24px 24px 0 40px;
 }
 
 .icon-cross {
@@ -199,11 +180,10 @@ img {
 }
 .mobile-close {
   display: block;
-
-  margin: 24px 24px 32px auto;
+  margin-left: auto;
+  margin-bottom: 32px;
   width: 24px;
   height: 24px;
-  padding: 0;
   cursor: pointer;
   border: 1px solid var(--dark);
   border-radius: 50%;
@@ -221,6 +201,15 @@ img {
   margin-bottom: 40px;
 }
 
+.numer-mobile {
+  margin-bottom: 40px;
+}
+
+.mail-mobile {
+  display: block;
+  margin-bottom: 48px;
+}
+
 .link-mobile {
   margin: 0;
   text-decoration: none;
@@ -234,19 +223,14 @@ img {
   color: var(--pressed-state);
 }
 
-.telephone-mobile {
-  margin-bottom: 40px;
-}
-
 .numer-mobile {
   display: flex;
   flex-wrap: nowrap;
-  width: 353px;
   color: var(--btn);
   text-decoration: none;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.33px;
+  font-size: 32px;
+  line-height: 1.33;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -260,10 +244,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-.contact-mobile {
-  margin-bottom: 48px;
-}
-
 .btn-mode-mobile {
   display: block;
   margin-left: auto;
@@ -271,7 +251,7 @@ img {
 
 .icon-list-mobile {
   display: flex;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .icon-distance-mobile {
@@ -324,8 +304,8 @@ img {
   padding: 0;
   margin: 0;
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.33;
   letter-spacing: 0.02em;
 
@@ -440,6 +420,11 @@ img {
   height: 60%;
 }
 
+.media-profil {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
 /*customers--------------------------*/
 .customers {
   padding-top: 96px;
@@ -673,7 +658,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
+  max-width: 392px;
   border-radius: 4px;
   background-color: var(--modal);
 }
@@ -695,7 +680,6 @@ img {
 .modal .modal-btn:focus {
   fill: var(--primary-header);
   background-color: var(--hover-focus);
-  border-color: none;
 }
 
 .vector {
@@ -831,7 +815,7 @@ textarea::placeholder {
 
 .label-check {
   display: flex;
-  width: 338px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
@@ -1037,6 +1021,6 @@ textarea::placeholder {
 }
 
 .f-mode {
-  width: 24;
+  width: 24px;
   height: 20px;
 }
