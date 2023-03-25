@@ -94,6 +94,8 @@ img {
 }
 
 .logo-studio {
+  display: flex;
+  align-items: center;
   /* margin-right: 76px; */
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -145,7 +147,7 @@ img {
 }
 
 .burger-btn {
-  margin-top: 24px;
+  padding-top: 24px;
   border: none;
   margin-left: auto;
   cursor: pointer;
